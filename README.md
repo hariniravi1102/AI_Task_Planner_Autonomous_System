@@ -70,8 +70,10 @@ uvicorn app:app --reload
 * Separate understanding from execution
 * Combine deterministic control with generative reasoning
 * Keep humans in the loop for critical decisions
+
+  
 ![Task Planning](Picture_1.png)
-![Task Confirmation](Picture_2png)
+![Task Confirmation](Picture_2.png)
 
 
 ## License

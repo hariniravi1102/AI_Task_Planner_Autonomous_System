@@ -1,0 +1,68 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GIS Autonomous Planner</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css"/>
+</head>
+
+<body>
+
+<h2>GIS Autonomous Planner</h2>
+
+<textarea id="userMessage" placeholder="Describe your GIS task"></textarea>
+<button id="sendBtn">Send</button>
+
+<div id="loader">
+  <span class="spinner"></span>
+  <span id="loaderText">Working...</span>
+</div>
+
+<div id="output"></div>
+
+<div id="dataSection" style="display:none">
+
+  <h3>Provide Spatial Data (choose any)</h3>
+
+  <div class="data-grid">
+
+
+    <div class="data-card">
+      <h4>Upload Files</h4>
+      <input type="file" id="fileInput" multiple
+        accept=".csv,.geojson,.json,.tif,.tiff,.zip,.shp">
+    </div>
+
+
+    <div class="data-card">
+      <h4>Draw AOI</h4>
+      <div id="map"></div>
+    </div>
+
+
+    <div class="data-card">
+      <h4>External Preference</h4>
+      <textarea id="externalText"
+        placeholder="Example:
+Sentinel-2
+March 2020
+10m resolution"></textarea>
+    </div>
+
+  </div>
+
+
+  <button onclick="saveAllData()">Upload / Save & Continue</button>
+
+  <div id="uploadResult"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

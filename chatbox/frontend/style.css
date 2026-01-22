@@ -1,0 +1,54 @@
+
+body {
+  font-family: Arial;
+  max-width: 1000px;
+  margin: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#loader {
+  display: none;
+  margin-top: 10px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.data-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+#map {
+  height: 250px;
+}
+11111
